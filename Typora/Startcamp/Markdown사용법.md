@@ -90,4 +90,16 @@ GIT 조아요
 
 
 
-​	
+## 2. 챗봇 퀘스트
+
+[날씨 API](https://openweathermap.org/current#name)
+
+key = 
+url = f'https://api.openweathermap.org/data/2.5/weather?q=Daejeon&appid={key}'
+response = requests.get(url).text
+
+
+
+![image-20200717154805813](온라인1일차 20200717.assets/image-20200717154805813.png)
+
+- bs4 
