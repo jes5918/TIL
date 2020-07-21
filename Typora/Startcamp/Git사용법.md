@@ -96,6 +96,36 @@ $ git remote add origin {github repo url}
 $ git remote -v
 ```
 
+아래 명령어는 삭제할때 사용합니다
+
+```sh
+$ git remote rm {삭제하고자 하는 remote name}
+```
+
+
+
+
+
+### 3. 원격 저장소에 업로드
+
+아래의 명령어를 통해 원격 저장소에 commit된 코드를 업로드 할 수 있습니다.
+
+```sh
+$ git push origin master
+```
+
+
+
+### 4. 원격 저장소에서 로컬로 가져오기
+
+github나 gitlab의 repo주소를 복사해둔뒤,
+
+```sh
+$ git clone {가져오고자 하는 repo url}
+```
+
+
+
 
 
 
