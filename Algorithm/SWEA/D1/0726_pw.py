@@ -1,0 +1,5 @@
+p, k = input().split()
+a = int(p)
+b = int(k)
+print(type(a))
+print(type(b))
