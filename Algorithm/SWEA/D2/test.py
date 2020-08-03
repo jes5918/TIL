@@ -1,2 +1,2 @@
-a = ['1', '3']
-print(type(a[0]))
+pascal = list([1 for x in range(s+1)] for s in range(5))
+print(pascal)
