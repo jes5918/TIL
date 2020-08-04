@@ -1,2 +1,4 @@
-pascal = list([1 for x in range(s+1)] for s in range(5))
-print(pascal)
+a = [1, 2, 3, 4]
+for idx, key in enumerate(a):
+    key = key * 2
+print(a)

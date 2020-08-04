@@ -8,10 +8,7 @@ def elec_bus(k, n, m, charges):
     fuel = k
     charge_count = 0
     sp = 0
-    while True:
-        sp += 1
-        if sp == n:
-            break
+    while sp != n:
         fuel -= 1
         if fuel == 0 and sp in charges:
             fuel = k
@@ -27,7 +24,8 @@ def elec_bus(k, n, m, charges):
                 else:
                     count -= 1
                     if count == 0:
-                        return 0            
+                        return 0   
+        sp += 1         
     return charge_count
 
 T = int(input())
