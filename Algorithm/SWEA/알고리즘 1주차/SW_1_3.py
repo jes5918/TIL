@@ -11,7 +11,4 @@ for t in range(1, 2):
             if i == j:
                 sum_cross[0] += li[i][j]
                 sum_cross[1] += li[99-i][j]
-    a = max(sum_row)
-    b = max(sum_col)
-    c = max(sum_cross)
-    print(f'#{t} {max(a, b, c)}')
+    print(f'#{t} {max(max(sum_row), max(sum_col), max(sum_cross))}')
