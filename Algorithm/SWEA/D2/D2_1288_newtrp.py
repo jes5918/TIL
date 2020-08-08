@@ -9,7 +9,7 @@ for tc in range(1, T+1):
         num = N * sp
         num_str = list(str(num))
         li.extend(num_str)
-        result = set(li)
-        if result == index:
+        res = set(li)
+        if res == index:
             break
     print(f'#{tc} {num}')

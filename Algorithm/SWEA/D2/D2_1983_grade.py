@@ -10,6 +10,6 @@ for tc in range(1, T+1):
     
     target_score = res_grade[target-1]
     res_grade.sort(reverse=True)
-    result = gradeindex[res_grade.index(target_score) // (N // 10)]
+    res = gradeindex[res_grade.index(target_score) // (N // 10)]
     
-    print(f'#{tc} {result}')
+    print(f'#{tc} {res}')
