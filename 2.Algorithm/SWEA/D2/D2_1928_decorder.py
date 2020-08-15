@@ -1,26 +1,41 @@
-# from base64 import b64decode
+'''
+문제에는 Encoding 과정을 설명해놨다 우리는 이것을 꺼꾸로 해야한다. (Encoding <-> Decoding)
 
-# T = int(input())
-# for tc in range(1, T+1):
-#     print(f'#{tc} {b64decode(input()).decode("UTF-8")}')
+우선 Encoding 과정에 대해 설명
+문자 3개를 아스키코드로 변환하고 (이건 월말평가 때도 나옴)
+(아스키코드는 0 ~ 127까지 있다.즉 2진수로 바꾸면 8자리까지 표현가능 127 = 11111111, 0 = 00000000 8자리로 표현)
+즉 문자 3개를 이어 붙이면 8 X 3 = 24 24자리의 2진수 표현식이 된다! 24자리의 2진수 표현식이 버퍼? 라고 한다.
+여기서 24자리의 2진수 버퍼를 6개씩 다시 쪼개버린다. 그 6개씩 쪼갠 6자리의 2진수를 다시 10진수로 바꾸자
+10진수로 바꾼뒤 문제에 나와있는 해당하는 값의 문자를 출력한다.
 
-def make_bin(z):
-    result = bin(z)[2:]
-    result = '0'*(6-len(result)) + result
-    return result
+이것을 꺼꾸로 하면 Decoding 과정이 되는 것이다!!
+1. 문자 4개를 잘라서 각 4개의 문자를 표를 보고 10진수의 값으로 보고
+2. 10진수 4개를 각각 6자리의 2진수로 변환하여 이어붙여 24자리의 버퍼를 만든다.
+3. 버퍼 24자리를 8개 단위로 잘르고
+4. 10진수로 변환한뒤, 아스키코드로 변환하여
+5. 문자를 출력한다.!!
+6. 계속 반복하면 디코딩 과정 끝.
+'''
+
+
+def bin_maker(z):
+    res = bin(z)[2:] # bin(x) 하면 0b00000형태로 앞에 2자리가 2진수를 표현하는 식으로 나오기 때문에 잘라서 없앤다
+    res = '0'*(6-len(res)) + res # 6자리를 맞추기 위해 만들어 놓은 식 1000이 들어오면 001000으로 바꿔준다
+    return res
 
 T = int(input())
-index ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-for test_case in range(1, T + 1):
+index ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/' # 표의 값을 찾기위해 인덱스를 설정(문제참고)
+for tc in range(1, T + 1):
     code = input()
-    res = ''
-    for x in range(0, len(code), 4):
-        binarystring = ''
-        word = code[x:x+4]
-        for y in range(4):
-            binarystring += make_bin(index.find(word[y]))
+    result = ''
+    for x in range(0, len(code), 4): # 4자리씩 잘라서 확인해야 하기 때문에 4자리씩 돌린다.
+        bin_str = '' 
+        word = code[x:x+4] # 입력받은 코드를 4자리씩 잘라서 word에 저장
+        for y in range(4): # 자른 4자리 코드를 하나하나 2진수로 바꾼다.
+            temp = index.find(word[y]) # 각자리의 문자를 index와 비교해서 값을 확인하여 temp에 저장
+            bin_str += bin_maker(temp) # 저장된 10진수의 숫자(0~63)을 2진수로 변환하는 함수 불러와 이어 붙인다.
         
-        res += chr(int(binarystring[:8], 2))
-        res += chr(int(binarystring[8:16], 2))
-        res += chr(int(binarystring[16:], 2))
-    print(f'#{test_case} {res}')
+        result += chr(int(bin_str[:8], 2)) # 이어붙여진 24자리의 문자의 0~7 8개를 10진수로 바꾸고 앞에 2개는 잘라 아스키코드로 변환시킨다.
+        result += chr(int(bin_str[8:16], 2)) # int('11110000', 2) 2의 위치는 2진수인거를 확인
+        result += chr(int(bin_str[16:], 2)) # 확인한걸 계속 해서 이어 붙여서 반복하자.
+    print(f'#{tc} {result}')
