@@ -1,2 +1,3 @@
 T = int(input())
-print('#', end='') for i in range(T)
+for i in range(T):
+    print('#', end='')
