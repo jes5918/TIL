@@ -17,7 +17,7 @@ def find_ladder(x, y):
         elif arr[x][y-1] == 1:
             while arr[x][y-1]: # 왼쪽 벽에 막힐떄까지 왼쪽으로 가자
                 arr[x][y] = 0 # 현위치를 0으로 만들고 이동하자
-                y -= 1  #한칸 옆으로 고고
+                y -= 1 # 한칸 옆으로 고고
     return y
 
 T = 10
