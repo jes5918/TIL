@@ -17,23 +17,19 @@ def othelo(x, y):
             if (nx < 0 or nx > N - 1) or (ny < 0  or ny > N - 1):
                 temp = []
                 break
-
             # 돌이 없는 빈칸일때 브레이크
             if not arr[nx][ny]:
                 temp = []
                 break
-
             # 같은돌이 나오면 브레이크
             if arr[nx][ny] == bw:
                 break
-
             # 다른돌이 나오면 temp에 좌표 저장
             # 다음칸으로 이동하기 위해 같은 dx, dy를 더해서 이동
             else:
                 temp.append((nx, ny))
                 nx += dx
                 ny += dy
-
         # 바꿔야할 오셀로가 들어 있는 temp의 좌표들에게 값 변화시킴
         for rx, ry in temp:
             if bw == 1:
