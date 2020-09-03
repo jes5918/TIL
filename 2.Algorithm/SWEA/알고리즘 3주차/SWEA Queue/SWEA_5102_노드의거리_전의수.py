@@ -13,7 +13,8 @@ def bfs(x, G):
                 q.append(nx)
                 visited[nx] = visited[x] + 1
                 if nx == G:
-                    return visited[nx] - 1
+                    return visited[nx]-1
+    return 0
 
 for tc in range(1, int(input())+1):
     V, E = map(int, input().split())
@@ -22,7 +23,4 @@ for tc in range(1, int(input())+1):
         st, ed = map(int, input().split())
         arr[st][ed] = arr[ed][st] = 1
     S, G = map(int, input().split())
-    res = bfs(S, G)
-    if not res:
-        res = 0
-    print('#{} {}'.format(tc, res))
+    print('#{} {}'.format(tc, bfs(S, G)))
