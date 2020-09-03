@@ -7,7 +7,6 @@ def addnum(idx, num, arr):
     s1.append(num)
     return s1+s2
 
-
 for tc in range(1, int(input())+1):
     N, M, L = map(int, input().split())
     arr = [int(x) for x in input().split()]

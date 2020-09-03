@@ -8,9 +8,7 @@ for tc in range(1, int(input())+1):
         new_list = list(map(int, input().split()))
         for j in range(M*i):
             if num_list[j] > new_list[0]:
-                print(num_list)
                 num_list[j:0] = new_list
-                print(num_list)
                 break
         if len(num_list) == M*i:
             num_list.extend(new_list)
