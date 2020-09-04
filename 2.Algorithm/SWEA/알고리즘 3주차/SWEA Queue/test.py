@@ -1,34 +1,27 @@
-for tc in range(1, int(input()) + 1):
-    cards = input()
-    # dict에 저장해보자 value는 리스트
-    card_dict = {'S': [], 'D': [], 'H': [], 'C': []}
-    # cards 입력받은 것을 3개 단위로 잘라서 첫번째는 deck에 2,3번째는 deck_num에 저장
-    for i in range(0, len(cards), 3):
-        deck = cards[i]
-        deck_num = cards[i + 1:i + 3]
-        # card_dict에 값 저장하자(list니 append 사용)
-        card_dict[deck].append(deck_num)
+import sys
+sys.stdin = open('4613.txt', 'r')
 
-    # ERROR를 위한 flag 신호 초기화
-    flag = True
-    # 결과값 저장 하기 위한 res
-    res = [13, 13, 13, 13]
-    # res의 index를 표시하기 위해 변수 하나 설정
-    i = 0
-    # card_dict의 items을 돌리자돌려
-    for dec, num in card_dict.items():
-        # 중복되는 것이 있으면 flag로 error 발생
-        if len(set(num)) != len(num):
-            flag = False
-            break
-        # 중복되는 것이 없을때
-        else:
-            res[i] -= len(card_dict[dec])
-            i += 1
+def coloring():
+    global minn
+    wc, bc, rc = 0, 0, 0
+    for i in W:
+        wc += M - i.count('W')
+    for i in B:
+        bc += M - i.count('B')
+    for i in R:
+        rc += M - i.count('R')
+    if minn > (wc + bc + rc):
+        minn = (wc + bc + rc)
 
-    # flag = False면 실행
-    if not flag:
-        print('#{} ERROR'.format(tc))
-    # 중복되는 것이 없을 때 그냥 정상적인 실행
-    else:
-        print('#{} {} {} {} {}'.format(tc, res[0], res[1], res[2], res[3]))
+
+for t in range(1, 1 + int(input())):
+    N, M = map(int, input().split())
+    WBR = [input() for _ in range(N)]
+    minn = N * M
+    for i in range(1, N - 1):
+        for j in range(1, i + 1):
+            W = WBR[0:j]
+            B = WBR[j:(N - i + j - 1)]
+            R = WBR[(N - i + j - 1):N]
+            coloring()
+    print('#{} {}'.format(t, minn))
