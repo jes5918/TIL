@@ -17,7 +17,7 @@ N = int(input())
 arr = [[int(x) for x in input()] for _ in range(N)]
 delta = [(1, 0), (-1, 0), (0, -1), (0, 1)]
 visited = []
-result = []
+res = []
 count = 0
 cnt = 0
 for i in range(N):
@@ -25,9 +25,9 @@ for i in range(N):
         if (i, j) not in visited and arr[i][j]:
             count += 1
             dfs(i, j)
-            result.append(cnt)
+            res.append(cnt)
             cnt = 0
 print(count)
-result.sort()
-for i in range(len(result)):
-    print(result[i])
+res.sort()
+for i in range(len(res)):
+    print(res[i])

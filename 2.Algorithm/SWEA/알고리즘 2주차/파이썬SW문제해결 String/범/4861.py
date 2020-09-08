@@ -26,8 +26,8 @@ def vertical(a, n, m):
 for t in range(1, int(input())+1):
     N, M = map(int, input().split())
     arr = [input() for i in range(N)]
-    result = horizontal(arr, N, M)
-    if result == False:
-        result = vertical(arr, N, M)
+    res = horizontal(arr, N, M)
+    if res == False:
+        res = vertical(arr, N, M)
 
-    print(f'#{t} {result}')
+    print(f'#{t} {res}')

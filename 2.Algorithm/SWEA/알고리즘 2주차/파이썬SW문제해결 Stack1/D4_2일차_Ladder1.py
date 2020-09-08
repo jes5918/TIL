@@ -37,8 +37,8 @@ for tc in range(1, T+1):
             break # 시간단축을 하자
 
     # 도착지점의 바로 한칸 위 지점부터 시작, 띄로 인한 인덱스 밀림 방지를 위해 -1 한다
-    result = find_ladder(99, end) - 1
-    print('#{} {}'.format(test_case, result))
+    res = find_ladder(99, end) - 1
+    print('#{} {}'.format(test_case, res))
 
 # 멍도군코드
 # def dfs(a, b):

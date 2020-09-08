@@ -2,7 +2,7 @@ import sys
 sys.stdin = open("input2.txt", "r")
 
 def findmaze(st_x, st_y):
-    global result
+    global res
     if arr[st_x][st_y] == 3:
         result = 1
         return
@@ -21,8 +21,8 @@ for tc in range(1, int(input())+1):
         for j in range(N-1, -1, -1):
             if arr[i][j] == 2:
                 start_x, start_y = i, j
-    result = 0
+    res = 0
     visited = []
     findmaze(start_x, start_y)
-    print('#{} {}'.format(tc, result))
+    print('#{} {}'.format(tc, res))
 

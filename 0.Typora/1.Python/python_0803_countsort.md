@@ -17,9 +17,9 @@ for tc in range(1, T+1):
     
     for i in range(9, -1, -1):
         if cnt[i] > max_card:
-            result = i
+            res = i
             max_card = cnt[i]
-    print(f'#{tc} {result} {cnt[result]}')
+    print(f'#{tc} {res} {cnt[res]}')
 ```
 
 - cnt라는 크기 10인 리스트에 각각의 칸의 index를 카드숫자로 생각하고 주어진 카드리스트를 하나씩 받으며 값과 cnt의 주소가 같으면 cnt의 값에 +1을 추가한다

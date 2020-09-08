@@ -19,12 +19,12 @@ def rotate90(arr):
 for tc in range(1, int(input())+1):
     N, M = map(int, input().split())
     arr = [[x for x in input()] for _ in range(N)]
-    result = discrim(arr)  # 회문이 없으면 0 내놓고 아니면 결과출력
-    if result == 0:
+    res = discrim(arr)  # 회문이 없으면 0 내놓고 아니면 결과출력
+    if res == 0:
         ro90 = rotate90(arr)
-        result = discrim(ro90)
-    result = ''.join(result) 
-    print(f'#{tc} {result}')
+        res = discrim(ro90)
+    res = ''.join(res)
+    print(f'#{tc} {res}')
     
 # T = int(input())
 

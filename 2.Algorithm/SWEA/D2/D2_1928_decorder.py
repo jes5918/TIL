@@ -28,7 +28,7 @@ T = int(input())
 index ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/' # 표의 값을 찾기위해 인덱스를 설정(문제참고)
 for tc in range(1, T + 1):
     code = input()
-    result = ''
+    res = ''
     for x in range(0, len(code), 4): # 4자리씩 잘라서 확인해야 하기 때문에 4자리씩 돌린다.
         bin_str = '' 
         word = code[x:x+4] # 입력받은 코드를 4자리씩 잘라서 word에 저장
@@ -36,7 +36,7 @@ for tc in range(1, T + 1):
             temp = index.find(word[y]) # 각자리의 문자를 index와 비교해서 값을 확인하여 temp에 저장
             bin_str += bin_maker(temp) # 저장된 10진수의 숫자(0~63)을 2진수로 변환하는 함수 불러와 이어 붙인다.
         
-        result += chr(int(bin_str[:8], 2)) # 이어붙여진 24자리의 문자의 0~7 8개를 10진수로 바꾸고 앞에 2개는 잘라 아스키코드로 변환시킨다.
-        result += chr(int(bin_str[8:16], 2)) # int('11110000', 2) 2의 위치는 2진수인거를 확인
-        result += chr(int(bin_str[16:], 2)) # 확인한걸 계속 해서 이어 붙여서 반복하자.
-    print(f'#{tc} {result}')
+        res += chr(int(bin_str[:8], 2)) # 이어붙여진 24자리의 문자의 0~7 8개를 10진수로 바꾸고 앞에 2개는 잘라 아스키코드로 변환시킨다.
+        res += chr(int(bin_str[8:16], 2)) # int('11110000', 2) 2의 위치는 2진수인거를 확인
+        res += chr(int(bin_str[16:], 2)) # 확인한걸 계속 해서 이어 붙여서 반복하자.
+    print(f'#{tc} {res}')

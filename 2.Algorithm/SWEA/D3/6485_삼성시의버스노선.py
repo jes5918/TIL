@@ -8,12 +8,12 @@ for tc in range(1, T+1):
             bus_stop[rout] = bus_stop.get(rout, 0) + 1
     
     P = int(input())
-    result = []
+    res = []
     for _ in range(P):
-        result.append(int(input()))
+        res.append(int(input()))
     
     print(f'#{tc}', end=' ')
     
-    for res in result:
+    for res in res:
         print(bus_stop.get(res, 0), end=' ')
     print()

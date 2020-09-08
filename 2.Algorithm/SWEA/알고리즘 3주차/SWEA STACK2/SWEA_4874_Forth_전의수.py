@@ -13,14 +13,14 @@ for tc in range(1, int(input())+1):
                 n2 = int(stack.pop())
                 n1 = int(stack.pop())
                 if temp[i] == "+":
-                    result = n1 + n2
+                    res = n1 + n2
                 elif temp[i] == "-":
-                    result = n1 - n2
+                    res = n1 - n2
                 elif temp[i] == "*":
-                    result = n1 * n2
+                    res = n1 * n2
                 elif temp[i] == "/":
-                    result = n1 // n2
-                stack.append(result)
+                    res = n1 // n2
+                stack.append(res)
             except:
                 res = 'error'
     if res == 0 and len(stack) == 1:

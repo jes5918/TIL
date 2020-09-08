@@ -10,6 +10,6 @@ for tc in range(1, T+1):
     
     for i in range(9, -1, -1):
         if cnt[i] > max_card:
-            result = i
+            res = i
             max_card = cnt[i]
-    print(f'#{tc} {result} {cnt[result]}')
+    print(f'#{tc} {res} {cnt[res]}')

@@ -30,25 +30,25 @@ for tc in range(10):
     test_case = int(input())
     arr = [[x for x in input()] for _ in range(n)] # 2차원 배열로 다받자
 
-    result = 1 # 결과값은 1로 세팅(문제조건)
+    res = 1 # 결과값은 1로 세팅(문제조건)
     len_pal = 2  # 첫 회문의 길이 세팅
 
-    while len_pal <= 100 and len_pal <= result + 2:
+    while len_pal <= 100 and len_pal <= res + 2:
         # while문의 조건 설명
         # len_pal <= 100 회문의길이가 최대 100까지 일 수 있으므로 조건지정
         # len_pal <= result + 2 이 조건을 통해서 실행시간 단축이 가능함 (회문의 속성 이용)
-        if discrim(arr, n, len_pal) > result: # 회문의 최대길이를 판별하기 위해 조건문사용
-            result = len_pal # 결과값에 최대길이의 회문 저장
+        if discrim(arr, n, len_pal) > res: # 회문의 최대길이를 판별하기 위해 조건문사용
+            res = len_pal # 결과값에 최대길이의 회문 저장
         len_pal += 1 # 회문의 길이 +1 하고 while문 돌린다.
 
     # 가로회문을 확인하기 위한 과정 위와 동일하지만 단지 배열만 zip(*arr)로 회전(?)시켰다
     len_pal = 2
-    while len_pal <= 100 and len_pal <= result + 2: # 가로를 찾기위해 한번더한다
-        if discrim(list(zip(*arr)), n, len_pal) > result:
-            result = len_pal
+    while len_pal <= 100 and len_pal <= res + 2: # 가로를 찾기위해 한번더한다
+        if discrim(list(zip(*arr)), n, len_pal) > res:
+            res = len_pal
         len_pal += 1
 
-    print("#{} {}".format(tc+1, result))
+    print("#{} {}".format(tc + 1, res))
 
 # def discrim(arr100):
 #     result = 1

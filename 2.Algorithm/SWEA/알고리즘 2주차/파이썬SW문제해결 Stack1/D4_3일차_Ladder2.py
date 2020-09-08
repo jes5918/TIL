@@ -47,16 +47,16 @@ for tc in range(1, 11):
             end.append(i)
 
     # 모든 경우의 수를 result에 튜플 형태로 저장
-    result = []
+    res = []
     for e in end:
         count = 0
         # return 값을 2개주면 튜플형태로 자동으로 반환됨
         temp = find_ladder(100, e, count, ladder)
-        result.append(temp)
+        res.append(temp)
 
     # 우선 cnt로 정렬하고, 동일한 것이 있을 때는 시작번호가 큰것 순서로 저장
-    result.sort(key=lambda x: (x[1], -x[0]))
-    print('#{} {}'.format(tc, result[0][0]))
+    res.sort(key=lambda x: (x[1], -x[0]))
+    print('#{} {}'.format(tc, res[0][0]))
 
 
 # def dfs(x, y): # 첫번째 방법 - dfs

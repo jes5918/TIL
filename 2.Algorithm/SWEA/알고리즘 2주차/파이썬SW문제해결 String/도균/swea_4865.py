@@ -14,5 +14,5 @@ for test_case in range(1, T + 1):
         else:
             word[n] = M.count(n)
     vlaues = list(word.values())
-    result = max(vlaues)
-    print(f'#{test_case} {result}')
+    res = max(vlaues)
+    print(f'#{test_case} {res}')

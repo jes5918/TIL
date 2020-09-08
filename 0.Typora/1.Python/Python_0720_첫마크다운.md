@@ -310,8 +310,8 @@ int(True)
 결과는 1
 
 ```python
-result = None
-result + 3
+res = None
+res + 3
 ```
 
 오류발생

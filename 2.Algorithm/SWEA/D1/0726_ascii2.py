@@ -1,8 +1,8 @@
 lists = input()
-result = ''
+res = ''
 for i in lists:
     if 97 <= ord(i) <= 122:
-        result += chr(ord(i) - 32)
+        res += chr(ord(i) - 32)
     else:
-        result += i
-print(result)
+        res += i
+print(res)

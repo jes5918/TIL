@@ -1,7 +1,7 @@
 import sys
 sys.stdin = open("sample_input.txt", "r")
 def dfs(start_node):
-    global result
+    global res
     visited[start_node] = 1 # 방문했다는 표시
     for i in range(1, V+1):
         if arr[start_node][i] and not visited[i]: # 간선이 있고 방문하지 안았으면 dfs 반복
@@ -18,6 +18,6 @@ for tc in range(1, int(input())+1):
         st, ed = map(int, input().split())
         arr[st][ed] = 1 # 간선표시
     S, G = map(int, input().split()) # S는 시작점 G는 도착점
-    result = 0 # 결과출력을 위해 초기화
+    res = 0 # 결과출력을 위해 초기화
     dfs(S) # dfs함수 불러오기
-    print('#{} {}'.format(tc, result))
+    print('#{} {}'.format(tc, res))

@@ -18,5 +18,5 @@ def discrim(lists):
 for tc in range(1, int(input())+1):
     string_list = list(input())
     stack = []
-    result = discrim(string_list)
-    print('#{} {}'.format(tc, result))
+    res = discrim(string_list)
+    print('#{} {}'.format(tc, res))

@@ -27,7 +27,7 @@ for i in range(t):
             if long[cnt+xxx] != short[xxx]:
                 break
         else:
-            result = 1
+            res = 1
             break
 
         for k in range(len(short[:xxx])):
@@ -37,6 +37,6 @@ for i in range(t):
         else:
             cnt += xxx+1
 
-        result = 0
+        res = 0
 
-    print("#{} {}".format(i+1, result))
+    print("#{} {}".format(i + 1, res))
