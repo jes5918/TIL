@@ -4,6 +4,7 @@ def dfs(node,r_graph,result):
             continue
         dfs(r_node,r_graph,result)
     result.append(node)
+
 for tc in range(1,11):
     v,e=map(int,input().split())
     node=list(map(int, input().split()))
