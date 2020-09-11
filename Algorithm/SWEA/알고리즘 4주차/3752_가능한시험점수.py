@@ -23,6 +23,25 @@ for tc in range(1, int(input())+1):
     # 경우의 수를 출력하라고 했으니 결과값의 길이 출력
     print('#{} {}'.format(tc, len(res)))
 
+# 교수님 풀이
+# for tc in range(1, int(input())+1):
+#     N = int(input())
+#     score = list(map(int, input().split()))
+#     visit = [[0] * (sum(score)+1) for _ in range(N+1)]
+#
+#     def dfs(k, s):
+#         if visit[k][s]:
+#             return
+#         visit[k][s] = 1
+#         if k == N:
+#             return
+#         dfs(k+1, s)
+#         dfs(k+1, s+score[k])
+#
+#     dfs(0, 0)
+#     print('#{} {}'.format(tc, sum(visit[N])))
+
+
 # 백트레킹은 시간초과
 # def powerset(idx):
 #     if idx == N:
@@ -46,6 +65,7 @@ for tc in range(1, int(input())+1):
 #     result = set()
 #     powerset(0)
 #     print('#{} {}'.format(tc, len(result)))
+
 
 
 # # 구조교 코드
