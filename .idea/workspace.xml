@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3f3ace4d-d77d-4ddd-a605-775507c395ec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Algorithm/BEAKJOON/단계/15649_NM1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/BEAKJOON/단계/15650_NM2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/BEAKJOON/단계/15651_NM3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/BEAKJOON/단계/15652_NM4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/BEAKJOON/단계/15654_NM5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/BEAKJOON/단계/15655_NM6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/BEAKJOON/단계/15656_NM7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/BEAKJOON/단계/15657_NM8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/BEAKJOON/단계/15663_NM9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/BEAKJOON/단계/15664_NM10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/BEAKJOON/단계/15665_NM11.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/BEAKJOON/단계/15666_NN12.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/SWEA/D3/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/SWEA/D3/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/.idea/보충수업.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/.idea/SW A형대비 알고리즘.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/1219.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/1226.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/1226_미로1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/1486.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/1486_교수님풀이.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/1486_장훈이의 높은 선반.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/3752.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/3752_가능한시험점수.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/4613_러시아국기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘/동칠이.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1h07moVaGRp0ym5Dk2MptfLx3Tp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/보충수업/SW A형대비 알고리즘" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\John YG\Desktop\TIL\보충수업\SW A형대비 알고리즘" />
+      <recent name="C:\Users\John YG\Desktop\TIL\2.Algorithm\SWEA\알고리즘 4주차" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.10872_팩토리얼">
+    <configuration name="문자열압축" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TIL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2.Algorithm/2020 KAKAO" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2.Algorithm/2020 KAKAO/문자열압축.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="10570_제곱 팰린드롬수" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TIL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithm/SWEA/D3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm/SWEA/D3/10570_제곱 팰린드롬수.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="10580_전봇대" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TIL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithm/SWEA/D3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm/SWEA/D3/10580_전봇대.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="10872_팩토리얼" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TIL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithm/BEAKJOON/단계/재귀" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm/BEAKJOON/단계/재귀/10872_팩토리얼.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="문자열압축2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TIL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2.Algorithm/2020 KAKAO" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2.Algorithm/2020 KAKAO/문자열압축2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.10872_팩토리얼" />
+        <item itemvalue="Python.10580_전봇대" />
+        <item itemvalue="Python.10570_제곱 팰린드롬수" />
+        <item itemvalue="Python.문자열압축" />
+        <item itemvalue="Python.문자열압축2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f3ace4d-d77d-4ddd-a605-775507c395ec" name="Default Changelist" comment="" />
+      <created>1599136318863</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599136318863</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="936" height="455" key="GridCell.Tab.0.bottom" timestamp="1599835616230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="455" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599835616230" />
+    <state width="936" height="455" key="GridCell.Tab.0.center" timestamp="1599835616229">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="455" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599835616229" />
+    <state width="936" height="455" key="GridCell.Tab.0.left" timestamp="1599835616229">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="455" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599835616229" />
+    <state width="936" height="455" key="GridCell.Tab.0.right" timestamp="1599835616229">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="455" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599835616229" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1599546996633">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1599546996633" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599648467690">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599648467690" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2.Algorithm/SWEA/알고리즘 4주차/1861_정사각형방.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2.Algorithm/SWEA/알고리즘 4주차/7465_창용마을무리의개수.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2.Algorithm/SWEA/알고리즘 4주차/1267_작업순서.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2.Algorithm/SWEA/알고리즘 4주차/test.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Algorithm/SWEA/D3/10570_제곱 팰린드롬수.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
