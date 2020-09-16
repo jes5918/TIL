@@ -1,2 +1,4 @@
+.idea/
+.vscode/
 .idea/**/*.a
 .vscode/**/*.a
