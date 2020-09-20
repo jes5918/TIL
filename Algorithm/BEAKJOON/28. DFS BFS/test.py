@@ -1,25 +1,37 @@
-def BFS(v):
-    global count
-    q = [v]
+from collections import deque
+
+def bfs(x, y):
+    q = deque()
+    q.append((x, y, True))
     while q:
-        curr = q.pop(0)
-        visited[curr] = 1
-        for i in adj[curr]:
-            if visited[i] == 0:
-                visited[i] = 1
-                count += 1
-                q.append(i)
+        xx, yy, ff = q.popleft()
+        # if (xx, yy) == (N-1, M-1):
+        #     return
+        for a, b in delta:
+            nx = a + xx
+            ny = b + yy
+            if nx < 0 or nx >= N or ny < 0 or ny >= M:
+                continue
+            if visited[nx][ny]:
+                continue
+            if board[nx][ny]:
+                if ff:
+                    q.append((nx, ny, False))
+                    visited[nx][ny] = visited[xx][yy] + 1
+                    continue
+                else:
+                    continue
+            q.append((nx, ny, ff))
+            visited[nx][ny] = visited[xx][yy] + 1
 
-V = int(input())
-E = int(input())
 
-visited = [0]*(V+1)
-adj = [[] for _ in range(V+1)]
-
-for _ in range(E):
-    a, b = map(int, input().split())
-    adj[a].append(b)
-    adj[b].append(a)
-count = 0
-BFS(1)
-print(count)
+N, M = map(int, input().split())
+board = [[int(x) for x in input()] for _ in range(N)]
+visited = [[0] * M for _ in range(N)]
+visited[0][0] = 1
+delta = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+bfs(0, 0)
+if visited[N-1][M-1]:
+    print(visited[N-1][M-1])
+else:
+    print('-1')

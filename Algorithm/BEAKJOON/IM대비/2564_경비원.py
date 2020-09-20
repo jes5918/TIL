@@ -48,3 +48,32 @@
 # cnt = []
 # count = 0
 # dfs(px, py)
+
+from collections import deque
+
+N, M = map(int, input().split())
+K = int(input())
+q = deque()
+for _ in range(K):
+    a, b = map(int, input().split())
+    q.append((a,b))
+px, py = map(int, input().split())
+res = 0
+while q:
+    aa, bb = q.popleft()
+    if aa == 1: # 북
+        if px == 1:
+            res += abs(py-bb)
+        elif px == 2:
+            if py + bb < N:
+                res += py + bb + M
+            else:
+                res += 2 * N - py - bb + M
+        elif px == 3:
+            res += bb + yy
+        else:
+            res += N - bb + py
+    elif aa == 2: # 남
+
+    elif aa == 3: # 서
+    else: # 동

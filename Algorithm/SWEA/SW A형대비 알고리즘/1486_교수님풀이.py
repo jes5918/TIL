@@ -8,7 +8,7 @@ def f1(n, g, K, m): # n 고려할 직원번호, g 직원 수, K 선반높이, m 
     if n==g: # 모든 직원이 고려된 경우
         if m>=K and minV>m-K:
             minV = m-K
-    elif m>=K and minV <= m-K: # 고려할 직원이 남아있지만, 탑의 높이가 기존보다 높은경우
+    elif m >= K and minV <= m-K: # 고려할 직원이 남아있지만, 탑의 높이가 기존보다 높은경우
         return
     else:
         f1(n+1, g, K, m) # n번 탑에 참여하지 않음 (이전 직원까지의 높이 m이 그대로 유지)
