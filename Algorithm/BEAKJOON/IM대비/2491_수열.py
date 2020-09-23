@@ -12,9 +12,3 @@
 #             if l > MAX:
 #                 MAX = l
 # print(MAX)
-
-N = int(input())
-numbers = list(map(int, input().split()))
-len_numbers = len(numbers)
-idx = 0
-while idx < len_numbers:
