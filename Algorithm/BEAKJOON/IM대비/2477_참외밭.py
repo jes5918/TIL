@@ -6,8 +6,10 @@ for _ in range(6):
     melon.append(b)
 MAX = 0
 for i in range(6):
-    temp = melon[i] * melon[(i+1)%6]
-    if MAX < temp:
+    temp = melon[i] * melon[(i+1) % 6]
+    if temp > MAX:
         idx = i
         MAX = temp
-print(num * (MAX - (melon[(idx+3)%6] * melon[(idx+4)%6])))
+# num 1m^2당 참외 갯수
+# MAX 가장 큰 사각형의 크기
+print(num * (MAX - (melon[(idx + 3) % 6] * melon[(idx + 4) % 6])))
