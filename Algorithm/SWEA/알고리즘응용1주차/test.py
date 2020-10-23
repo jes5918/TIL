@@ -1,18 +1,3 @@
-arr = [1, 2, 3]
-N = 3
-R = 3
-
-sel = [0] * R
-
-
-def combination(idx, sidx):
-    if sidx == R:
-        print(sel)
-        return
-
-    for i in range(idx, N):
-        sel[sidx] = arr[i]
-        combination(i + 1, sidx + 1)
-
-
-combination(0, 0)
+temp = '0000000111100000011000000111100110000110000111100111100111111001100111'
+for i in range(0, len(temp), 7):
+    print('{}'.format(int(temp[i:7+i],2)))
