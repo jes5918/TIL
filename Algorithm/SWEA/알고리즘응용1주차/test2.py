@@ -1,4 +1,4 @@
-num = 0x01D06079861D79F99F
+num = 0x68B46DDB9346F4
 binay_num = bin(num)[2:]
 temp = (len(str(num))-2) * 4 - len(binay_num)
 binay_num = '0' * temp + binay_num
