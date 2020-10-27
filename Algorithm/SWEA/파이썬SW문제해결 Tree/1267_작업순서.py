@@ -28,7 +28,7 @@ for tc in range(1, 11):
             q.append(n)
             while q:
                 nn = q.pop(0)
-                for w in work[nn]:
+                for w in work[nn]:qe
                     # 결과값이 저장되어 있지 않은 부분이라면
                     if not res[w]:
                         # 결과값에 저장 (전 순위보다 1증가시켜서 저장)
