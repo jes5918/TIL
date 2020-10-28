@@ -1,6 +1,6 @@
 import sys
 from pprint import pprint
-sys.stdin = open('input5.txt', 'r')
+sys.stdin = open('input4.txt', 'r')
 
 code_index = ['3211', '2221', '2122', '1411', '1132',
               '1231', '1114', '1312', '1213', '3112']
@@ -46,6 +46,7 @@ for tc in range(1, int(input())+1):
             check(b)
 
     result = []
+    print(list(code_list))
     for c in list(code_list):
         res = 0
         for i in range(8):
@@ -59,8 +60,6 @@ for tc in range(1, int(input())+1):
             for cc in c:
                 temp2 += int(cc)
             result.append(temp2)
-        else:
-            result.append(0)
     print('#{} {}'.format(tc, sum(result)))
 
 
