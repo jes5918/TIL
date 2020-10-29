@@ -54,7 +54,7 @@ def solve(arr, n, now):
 for tc in range(1, int(input()) + 1):
     num, N = map(int, input().rstrip().split())
     board = list(str(num))
-    print('#{} {}'.format(tc, int(''.join(solve(board, N, 0)))))
+    print('#{} {}'.format(tc, ''.join(solve(board, N, 0))))
 
     # perm_list = perm(len(board), 0)
     # res = 0
