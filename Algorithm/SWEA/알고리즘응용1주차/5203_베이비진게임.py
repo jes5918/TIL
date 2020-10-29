@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('input.txt', 'r')
+sys.stdin = open('input2.txt', 'r')
 
 def check(temp_deck):
     global flag
