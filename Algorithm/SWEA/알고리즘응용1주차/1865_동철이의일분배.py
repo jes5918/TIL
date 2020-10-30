@@ -1,21 +1,27 @@
-def bt(a, k, p):
-    global best
-    if best >= p:
+import sys
+
+sys.stdin = open('input2.txt', 'r')
+
+
+def dongchul(person, percentage):
+    global res
+    if res >= percentage:
         return
-    elif k == n:
-        best = p
-    else:
-        for i in range(k, n):
-            a[k], a[i] = a[i], a[k]
-            bt(a, k + 1, p * g[k][a[k]] / 100)
-            a[k], a[i] = a[i], a[k]
+    if person == N:
+        if res < percentage:
+            res = percentage
+        return
+    for j in range(N):
+        if not visited[j]:
+            visited[j] = True
+            dongchul(person + 1, percentage * board[person][j])
+            visited[j] = False
 
 
-T = int(input())
-for test_case in range(1, T + 1):
-    n = int(input())
-    g = [list(map(int, input().split())) for _ in range(n)]
-
-    best = 0
-    bt([i for i in range(n)], 0, 1)
-    print("#{0} {1:.6f}".format(test_case, best * 100))
+for tc in range(1, int(input()) + 1):
+    N = int(input())
+    board = [[int(x) / 100 for x in input().split()] for _ in range(N)]
+    res = 0
+    visited = [False] * N
+    dongchul(0, 1)
+    print('#{} {:6f}'.format(tc, res * 100))
