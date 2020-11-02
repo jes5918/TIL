@@ -37,8 +37,10 @@ def merge(left, right):
 for tc in range(1, int(input())+1):
     N = int(input())
     arr = list(map(int, input().split()))
+    print(arr)
     cnt = 0
     arr = merge_sort(arr)
+    print(arr)
     print('#{} {} {}'.format(tc, arr[N//2], cnt))
 
 # 다른사람코드

@@ -12,8 +12,9 @@ def gotohome(x, total, n):
     else:
         last = customer[x]
     if 0 not in visited:
+        total += abs(last[0] - home_x) + abs(last[1] - home_y)
         if total < result:
-            result = total + abs(last[0] - home_x) + abs(last[1] - home_y)
+            result = total
         return
     for i in range(len(customer)):
         if not visited[i]:
