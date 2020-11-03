@@ -1,26 +1,25 @@
 import sys
 from collections import deque
+
 sys.stdin = open('input.txt', 'r')
 sys.setrecursionlimit(10000000)
 
-def BFS(now, cnt):
-    global res
+
+def BFS(now):
     q = deque()
-    q.append((now, cnt))
+    q.append(now)
     while q:
-        nn, cc = q.popleft()
-        for x in [nn + 1, nn - 1, nn * 2, nn - 10]:
-            if x == M:
-                if res > cc:
-                    res = cc
-                continue
-            if cc > res:
-                continue
-            q.append((x, cc+1))
+        nn = q.popleft()
+        if nn == M:
+            return
+        for x in (nn + 1, nn - 1, nn * 2, nn - 10):
+            if 0 < x <= 1000000 and not visited[x]:
+                visited[x] = visited[nn] + 1
+                q.append(x)
 
 
-for tc in range(1, int(input().rstrip())+1):
+for tc in range(1, int(input().rstrip()) + 1):
     N, M = map(int, input().rstrip().split())
-    res = 987654321
-    BFS(N, 0)
-    print('#{} {}'.format(tc, res))
+    visited = [0] * 1000001
+    BFS(N)
+    print('#{} {}'.format(tc, visited[M]))

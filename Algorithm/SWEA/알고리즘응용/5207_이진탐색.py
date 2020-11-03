@@ -1,63 +1,32 @@
+import sys
+
+sys.stdin = open('input7.txt', 'r')
 
 
+def binarysearch():
+    cnt = 0
+    for b in B:
+        l = 0
+        r = N - 1
+        before = 'start'
+        while True:
+            m = (l + r)//2
+            if A[m] == b:
+                cnt += 1
+                break
+            elif A[m] > b:
+                r = m - 1
+                now = 'right'
+            elif A[m] < b:
+                l = m + 1
+                now = 'left'
+            if now == before:
+                break
+            before = now
+    return cnt
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# import sys
-# sys.stdin = open('input.txt', 'r')
-#
-# def my_func():
-#     result = 0
-#     for b in B:
-#         # 초기값
-#         before = None
-#         l = 0
-#         r = N - 1
-#         while l <= r:
-#             m = (l + r) // 2
-#             if b == A[m]:  # 탐색 완료
-#                 result += 1
-#                 break
-#             elif b < A[m]:  # 왼쪽 탐색
-#                 r = m - 1
-#                 current = 'left side'
-#             elif b > A[m]:  # 오른쪽 탐색
-#                 l = m + 1
-#                 current = 'right side'
-#             if before == current:  # 오-오 // 왼-왼
-#                 break
-#             before = current
-#     return result
-#
-#
-# for tc in range(1, int(input()) + 1):
-#     N, M = map(int, input().split())
-#     A = sorted(list(map(int, input().split())))  # 정렬 필수!!
-#     B = map(int, input().split())
-#     print('#{} {}'.format(tc, my_func()))
+for tc in range(1, int(input().rstrip()) + 1):
+    N, M = map(int, input().rstrip().split())
+    A = sorted(list(map(int, input().rstrip().split())))
+    B = list(map(int, input().rstrip().split()))
+    print('#{} {}'.format(tc, binarysearch()))

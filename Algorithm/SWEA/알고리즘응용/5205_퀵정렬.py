@@ -3,7 +3,18 @@ import sys
 sys.stdin = open('input9.txt', 'r')
 
 
-def partition(board, l, r):
+def partitionlomuto(board, l, r):
+    pivot = board[r]
+    i = l - 1
+    for j in range(l, r):
+        if board[j] < pivot:
+            i += 1
+            board[i], board[j] = board[j], board[i]
+    board[i + 1], board[r] = board[r], board[i + 1]
+    return i + 1
+
+
+def partitionhoare(board, l, r):
     pivot = (l + r) // 2
     while l < r:
         while (board[l] < board[pivot] and l < r):
@@ -20,7 +31,8 @@ def partition(board, l, r):
 
 def quick_sort(board, l, r):
     if l < r:
-        p = partition(board, l, r)
+        # p = partitionhoare(board, l, r)
+        p = partitionlomuto(board, l, r)
         if p == N // 2:
             return
         elif p > N // 2:
