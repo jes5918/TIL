@@ -88,7 +88,8 @@ for tc in range(1, int(input().rstrip()) + 1):
 #         cur = -1
 #         min_value = 0xffffffffffff
 #         for i in range(N):
-#             if visit[i]: continue
+#             if visit[i]:
+#               continue
 #             if check[i] < min_value:
 #                 cur, min_value = i, check[i]
 #
@@ -96,7 +97,8 @@ for tc in range(1, int(input().rstrip()) + 1):
 #         total_length += min_value
 #
 #         for j in range(N):
-#             if cur == j: continue
+#             if cur == j:
+#               continue
 #             dist_bet = (x_list[j]-x_list[cur])**2 + (y_list[j]-y_list[cur])**2
 #             if dist_bet < check[j]:
 #                 check[j] = dist_bet

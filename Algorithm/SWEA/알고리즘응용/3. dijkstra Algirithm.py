@@ -9,6 +9,7 @@ mygraph = {
     'F': {'A': 5},
 }
 
+
 def dijkstra(graph, start):
     distances = {node: float('inf') for node in graph}
     print(distances)
