@@ -12,7 +12,6 @@ mygraph = {
 
 def dijkstra(graph, start):
     distances = {node: float('inf') for node in graph}
-    print(distances)
     distances[start] = 0
     q = []
     heappush(q, [distances[start], start])
@@ -26,7 +25,6 @@ def dijkstra(graph, start):
             if distance < distances[adjacent]:
                 distances[adjacent] = distance
                 heappush(q, [distance, adjacent])
-    print(distances)
     return distance
 
 
